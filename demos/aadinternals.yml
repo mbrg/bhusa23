@@ -18,7 +18,7 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 90
+  cols: 60
   
   # Explicitly set the number of rows
   # or use `auto` to take the current
@@ -484,44 +484,6 @@ records:
     content: "\e[?25l\e[93m\e[30;42H^D\e[91m^C\r\e[?25h"
   - delay: 10
     content: "\e[m\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
-  - delay: 879
-    content: "\e[93m^D"
-  - delay: 17
-    content: "\e[m"
-  - delay: 204
-    content: "\e[?25l\e[93m\e[30;42H^D\e[91m^C\r\e[?25h"
-  - delay: 16
-    content: "\e[m\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
-  - delay: 612
-    content: "\e[93m^D"
-  - delay: 16
-    content: "\e[m"
-  - delay: 194
-    content: "\e[?25l\e[93m\e[30;42H^D\e[91m^C\r\e[?25h"
-  - delay: 10
-    content: "\e[m\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
-  - delay: 3614
-    content: "\e[93m^D"
-  - delay: 16
-    content: "\e[m"
-  - delay: 2083
-    content: "\r\n"
-  - delay: 189
-    content: "\e[38;5;9m♦ : The term '♦' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the \e[m\r\n\e[38;5;9mspelling of the name, or if a path was included, verify that the path is correct and try again.\e[m\r\n\e[38;5;9mAt line:1 char:1\e[m\r\n\e[38;5;9m+ ♦\e[m\r\n\e[38;5;9m+ ~\e[m\r\n\e[38;5;9m    + CategoryInfo          : ObjectNotFound: (♦:String) [], CommandNotFoundException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C"
-  - delay: 24
-    content: "\e[m\r\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
-  - delay: 77756
-    content: "\e[93me"
-  - delay: 15
-    content: "\e[m"
-  - delay: 203
-    content: "\e[93m\bex"
-  - delay: 16
-    content: "\e[m"
-  - delay: 94
-    content: "\e[?25l\e[93m\e[30;42Hexi\e[?25h"
-  - delay: 16
-    content: "\e[m"
   - delay: 142
     content: "\e[?25l\e[92m\e[30;42Hexit\e[?25h"
   - delay: 16
