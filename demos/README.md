@@ -1,1 +1,0 @@
-Demos were either recorded with screen grabbing or generated with `terminalizer`.
